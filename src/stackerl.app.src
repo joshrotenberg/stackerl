@@ -1,0 +1,13 @@
+{application, stackerl,
+ [
+  {description, "doof"},
+  {vsn, "1"},
+  %%{registered, [stackerl_app, stackerl_sup,stackerl_server]},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { stackerl_app, [hello]}},
+  {env, []}
+ ]}.
